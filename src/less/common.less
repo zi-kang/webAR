@@ -1,0 +1,154 @@
+/*reset css*/
+*,::before,::after{
+    margin:0;
+    padding:0;
+    /*清除移动端默认的点击高亮效果*/
+    -webkit-tap-highlight-color:transparent;
+    /*设置以边框开始计算宽度*/
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    background-color: #F5F5F5;
+}
+
+html{
+    width: 100%;
+    min-height: 100%;
+}
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#666666;
+    background-color: #ffffff;
+}
+
+a{
+    color:#333;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+ul,ol{
+    list-style:none;
+}
+
+input{
+    border:none;
+    outline:none;
+    /*清除移动端默认的表单样式*/
+    -webkit-appearance:none;
+}
+
+button{
+    border:none;
+    outline: none;
+}
+
+/*common css*/
+.fl{
+    float:left;
+}
+
+.fr{
+    float:right;
+}
+
+.pr{
+    position:relative;
+}
+
+.pa{
+    position:absolute;
+}
+.pf{
+    position: fixed;
+}
+.db{
+    display: block;
+}
+.dlb{
+    display: inline-block;
+}
+.dl{
+    display: inline;
+}
+.dn{
+    display: none;
+}
+.t-center{
+    text-align: center;
+}
+.clearfix::before,.clearfix::after{
+    content:"";
+    height:0;
+    line-height:0;
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+
+.v-center{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.p-middle{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.v-body{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hide{
+    display: none;
+}
+
+@media  screen and (max-width: 299px) {
+    html{
+        font-size: 70px;
+    }
+}
+@media  screen and (min-width: 300px) {
+    html{
+        font-size: 80px;
+    }
+}
+@media  screen and (min-width: 350px) {
+    html{
+        font-size: 90px;
+    }
+}
+
+@media  screen and (min-width: 370px) {
+    html{
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    html{
+        font-size: 26.66666667vw;
+    }
+}
